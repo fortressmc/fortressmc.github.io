@@ -1,0 +1,168 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* optional */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #c084fc;
+}
+
+/* Header elements */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.logo {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+/* Navigation */
+.nav-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125rem;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease-in-out;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #c084fc;
+    transform: scale(1.05);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+/* Main Content */
+.main-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin-bottom: 6rem;
+}
+
+.content-box:hover {
+    transform: scale(1.02);
+}
+
+.section-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #c084fc;
+}
+
+.section-text {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.games-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.games-list li {
+    margin-bottom: 0.5rem;
+}
+
+#about,
+#games {
+    scroll-margin-top: 100px;
+    /* adjust depending on your header height */
+}
+
+.back-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(135deg, #7e5bef, #a855f7);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #a855f7, #7e5bef);
+    transform: scale(1.05);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.minecraft-btn {
+    font-family: 'Minecraftia', monospace, sans-serif;
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(90deg, #7c3aed 0%, #6366f1 100%);
+    color: #fff;
+    border: 3px solid #312e81;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 0 #312e81, 0 8px 16px rgba(49,46,129,0.4);
+    text-shadow: 2px 2px 0 #312e81, 0 0 8px #a78bfa;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s, background 0.2s;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.minecraft-btn:hover {
+    background: linear-gradient(90deg, #6366f1 0%, #a78bfa 100%);
+    color: #fff;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 0 #312e81, 0 12px 24px rgba(49,46,129,0.5);
+    text-shadow: 2px 2px 0 #312e81, 0 0 12px #a78bfa;
+}

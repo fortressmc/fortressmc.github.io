@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 - Fortress Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #312e81 0%, #7c3aed 100%);
+            color: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .error-container {
+            background: rgba(35, 39, 47, 0.95);
+            padding: 2.5rem 3.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(49,46,129,0.4);
+            text-align: center;
+        }
+        .error-code {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #a78bfa;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 16px #312e81;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.5rem 0;
+            color: #e0e7ff;
+        }
+        .home-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 2.2rem;
+            background: linear-gradient(90deg, #7c3aed 0%, #6366f1 100%);
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 16px rgba(49,46,129,0.2);
+            border: none;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .home-link:hover {
+            background: linear-gradient(90deg, #6366f1 0%, #a78bfa 100%);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message">Oops! Page not found.<br>The page you are looking for doesn't exist.</div>
+        <a class="home-link" href="index.html">Go to Homepage</a>
+    </div>
+</body>
+</html>
